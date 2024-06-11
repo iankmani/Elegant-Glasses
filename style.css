@@ -1,18 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
 }
 .header{
     display: flex;
     justify-content: space-between;
-    border: 2px solid red;
+    /* border: 2px solid red; */
     padding: 3rem;
-    background-color: aqua;
+    background-color: #335370;
+    flex-wrap: wrap;
+}
+.header h1{
+    font-family: "Teko", sans-serif;
+    font-size: 4rem;
 }
 .options{
     display: flex;
-    gap: 2rem;
+    gap: 4rem;
     align-items: center;
    text-emphasis: none;
     text-transform: capitalize;
@@ -22,6 +30,12 @@
 
    
 }
+.options a{
+    text-decoration: none;
+    color: #fff;
+    transition: 0.5s ease-in-out;
+    }
+
 .header a{
     gap: 2rem;
 }
@@ -30,5 +44,44 @@
     background-color: blanchedalmond;
     padding: 1rem;
     transition: all .5s;
+}.about-us-image {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    /* align-content: center; */
+    /* align-items: center; */
+    padding: 50px;
+    /* width: 100rem; */
+    height: 25rem;
+    flex-wrap: wrap;
+  }
+.about-us-section{
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+    padding: 50px;
+    gap: 2rem;
+    background: grey;
+
 }
+.glass-img{
+    width: 100%;
+    border-radius: 24px;
+    
+}
+h2{
+    font-size: 2rem;
+    font-weight: 700;
+    text-transform: capitalize;
+    text-align: center;
+
+}
+.p{
+    font-size: 1.3rem;
+    line-height: 40px;
+    letter-spacing: 2px;
+    color: lightgray;
+
+}
+
 
