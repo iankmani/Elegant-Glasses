@@ -27,6 +27,13 @@
   font-size: 1.5rem;
   position: relative;
 }
+@media only screen and (max-width: 33em) {
+  .options {
+    flex-wrap: wrap;
+  }
+ 
+}
+
 .options a {
   text-decoration: none;
   color: #fff;
@@ -88,6 +95,11 @@ h2 {
   padding: 20px;
   background: grey;
 }
+@media only screen and (max-width: 26.25em) {
+  .icons{
+    flex-wrap: wrap;
+  }
+}
 .ig {
   margin: 10px;
   width: 60px;
@@ -129,34 +141,46 @@ h2 {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
   padding: 20px;
   gap: 2rem;
   margin: 20px;
-  
+}
+.description-title{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /* flex-wrap: wrap; */
+  gap: 1rem;
+
 
 }
 .description-title h2{
   text-align: center;
   font-size: 1.5rem;
   font-weight: bold;
-  margin-bottom: 10px;
-  justify-content: center;
-  display: flex;
-  padding-bottom: 25px;
+  vertical-align: text-top;
+  color: red;
+  /* margin-bottom: 10px; */
+  /* justify-content: center;
+  display: flex; */
+  /* padding-bottom: 25px; */
 }
-.description-title p{
+.description-paragraph{
   line-height: 40px;
   letter-spacing: 2px;
-
+  text-align: center;
 }
   .description-image{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 20px;
     gap: 2rem;
     flex-wrap: wrap;
-    margin: 20px;
+    width: 25rem;
+    height: 30rem;
+    border-bottom: 2px solid #333;
     
   }
 
